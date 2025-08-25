@@ -1,7 +1,7 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
-import "./Skills.css";
+import "./skills.css";
 
 const skills = [
   { icon: <FaHtml5 />, name: "HTML5", color: "#E34F26" },
