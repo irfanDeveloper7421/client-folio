@@ -1,0 +1,135 @@
+#about {
+    z-index: 1;
+    min-height: calc(100vh - 70px);
+    height: auto;
+    scroll-margin-top: 80px;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+#about>h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #cf1b1b;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+#about>h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #cf1b1b;
+}
+
+#about>.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container>img {
+    flex-basis: 35%;
+    max-width: 100%;
+    width: 360px;
+    height: 450px;
+    border-radius: 20px;
+    object-fit: cover;
+    /* object-position: top right; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container>img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.container>.sub-container {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sub-container>h3 {
+    font-size: 1.8rem;
+}
+
+.sub-container>p {
+    text-align: left;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ccc;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        gap: 2rem;
+    }
+
+    .container>img {
+        flex-basis: 40%;
+        width: 300px;
+        height: 400px;
+    }
+
+    .container>.sub-container {
+        flex-basis: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+    #about {
+        padding-top: 3rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+    }
+
+    .container>img {
+        flex-basis: 80%;
+        width: 250px;
+        height: 320px;
+    }
+
+    .container>.sub-container {
+        flex-basis: 100%;
+        align-items: center;
+    }
+
+    .sub-container>p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #about>h1 {
+        font-size: 2rem;
+    }
+
+    .sub-container>h3 {
+        font-size: 1.5rem;
+    }
+
+    .sub-container>p {
+        font-size: 14px;
+    }
+}

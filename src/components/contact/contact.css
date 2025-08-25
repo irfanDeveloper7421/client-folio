@@ -1,0 +1,108 @@
+#contact {
+  border: none;
+  max-width: 100vw;
+  width: 90%;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  scroll-margin-top: 80px;
+}
+
+#contact > h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #cf1b1b;
+  margin-bottom: 2rem;
+  position: relative;
+  text-align: center;
+}
+
+#contact > h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -8px;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #cf1b1b;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+form > .input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.input-form > label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.input-form > input,
+.input-form > textarea {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-form > input:focus,
+.input-form > textarea:focus {
+  border-color: #cf1b1b;
+  box-shadow: 0 0 0 3px rgba(207, 27, 27, 0.2);
+}
+
+.input-form > textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #cf1b1b;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #a31515;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(207, 27, 27, 0.3);
+}
+
+@media (max-width: 480px) {
+  #contact {
+    padding: 2rem 1rem;
+    width: 95%;
+  }
+
+  #contact > h1 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

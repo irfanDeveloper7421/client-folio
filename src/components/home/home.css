@@ -1,0 +1,145 @@
+#home {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  min-height: calc(100vh - 70px);
+  height: auto;
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+  scroll-margin-top: 80px;
+}
+
+#home > .left {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.left-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+.left-text h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.left-text h1 span {
+  color: #af0f0f;
+}
+
+.left-text h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #ddd;
+}
+
+.left-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+   color: #ccc;
+}
+
+.left-text button {
+  background-color: #cf1b1b;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.7rem 1.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.left-text button:hover {
+  background-color: #af0f0f;
+  transform: scale(1.05);
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+.social-icons li a {
+  font-size: 1.5rem;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-icons li a:hover {
+    color: #af0f0f;
+  transform: scale(1.1);
+}
+
+#home > .right {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.right img {
+  width: 330px;
+  height: 330px;
+  object-fit: cover;
+  object-position: right top;
+  border-radius: 50%;
+  border: 6px solid #cf1b1b;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 992px) {
+  #home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-text {
+    align-items: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .right img {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 576px) {
+  .left-text h1 {
+    font-size: 2rem;
+  }
+
+  .left-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .left-text p {
+    font-size: 1rem;
+  }
+
+  .right img {
+    width: 180px;
+    height: 180px;
+  }
+}
