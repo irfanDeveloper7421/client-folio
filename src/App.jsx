@@ -1,8 +1,11 @@
-function App() {
+import Footer from "./components/footer/Footer"
+import Header from "./components/header/Header"
 
+function App() {
   return (
     <>
-    <h2>Hello Wrold</h2>
+    <Header/>
+    <Footer/>
     </>
   )
 }
