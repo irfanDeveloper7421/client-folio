@@ -6,7 +6,8 @@ import Footer from "./components/footer/Footer"
 import Header from "./components/header/Header"
 import Home from "./components/home/Home"
 import About from "./components/about/About"
-import Skills from "./components/skills/Skills"
+// import Skills from "./components/skills/Skills"
+import Skills from  "./components/skills/Skills"
 import Contact from "./components/contact/Contact"
 import Projects from "./components/projects/Project"
 
@@ -22,6 +23,7 @@ function App() {
     <Header/>
     <Home data-aos="fade-up" />
     <About data-aos="fade-right"/>
+    {/* <Skills data-aos="zoom-in"/> */}
     <Skills data-aos="zoom-in"/>
     <Projects data-aos="flip-left"/>
     <Contact data-aos="fade-up"/>
